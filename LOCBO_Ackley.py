@@ -288,7 +288,6 @@ warnings.filterwarnings("ignore", category=BadInitialCandidatesWarning)
 warnings.filterwarnings("ignore", category=RuntimeWarning)
 warnings.filterwarnings("ignore", category=InputDataWarning)
 
-args = parse_arguments()
 parser = argparse.ArgumentParser(description="Process input arguments for the script.")
 parser.add_argument("hetero_switch", type=int, default=1, help="Heteroscedasticity switch (int)")
 parser.add_argument("input_acq", type=str, default='OCEI', help="Acquisition function (str)")
