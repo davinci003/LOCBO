@@ -6,7 +6,7 @@ Usage
 =====
 
 ## Run
-python LOCBO_Ackley.py
+python LOCBO_Ackley.py 1 OCEI 5 64 5 2
 
 ## Notes
 To run the code, the following packages are necessary:
