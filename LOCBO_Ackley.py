@@ -251,7 +251,6 @@ def online_cbo_alpha(train_x, train_obj, alpha_desired, model_ei, iteration, kap
     else:
         g_t_x = c_t
 
-
     g_t_x = max(g_t_x, 0)
     u = norm.ppf(1 - g_t_x / 2) * torch.sqrt(post_var) + post_mean
     l = norm.ppf(g_t_x / 2) * torch.sqrt(post_var) + post_mean
