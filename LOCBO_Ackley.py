@@ -1,21 +1,5 @@
 from LOCBO_ackley_imports import *
 
-
-def parse_arguments():
-    parser = argparse.ArgumentParser(description="Script for Bayesian Optimization setup.")
-    parser.add_argument("--hetero_switch", type=int, default=1,
-                        help="Heteroscedasticity switch (0 or 1).")
-    parser.add_argument("--input_acq", type=str, default="OCEI",
-                        help="Acquisition function type ('OCEI').")
-    parser.add_argument("--input_ntrial", type=int, default=7,
-                        help="Number of trials.")
-    parser.add_argument("--input_MC_samples", type=int, default=64,
-                        help="Number of Monte Carlo samples.")
-    parser.add_argument("--input_length", type=int, default=5,
-                        help="Length scale.")
-    parser.add_argument("--input_kappa", type=int, default=2,
-                        help="kappa.")
-
 def integrand_torch_middle(x, a, b, sigma, l, u, sigma_y, best_f, alpha, desired_alpha):
     x = x.to(a)
     val_2 = torch.tensor(2.0)
