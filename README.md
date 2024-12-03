@@ -12,7 +12,7 @@ For synthetic objective function (Ackley function)
 
 For radio resource management problem
 
-```python LOCBO_Cuav.py 4 10 40 1 0.7 0 1```
+```python LOCBO_CUAV.py 4 10 40 1 0.7 0 1```
 
 
 ## Notes
